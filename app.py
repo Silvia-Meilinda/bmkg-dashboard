@@ -8,7 +8,7 @@ st.set_page_config(page_title="BMKG Juanda Dashboard", layout="wide")
 st.title("🌦️ Dashboard Monitoring Cuaca BMKG Juanda (Per Bulan)")
 
 # 1) List file bulanan
-files = sorted(glob.glob("data/*.csv"))
+files = sorted(glob.glob("bmkg_hourly.csv"))
 if not files:
     st.error("Folder data/ kosong. Upload file CSV bulanan ke folder data/ di repo GitHub.")
     st.stop()
